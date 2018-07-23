@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Set Up Account</title>  
+    </head>
+    <body>
+        <form action="https://www.bucketzapp.com/api/users/" method="post">
+            Name:<br>
+            <input type="text" id = "name" name="name" required/>
+            <h3>Input how much money you have to spend on these categories by month.</h3>
+            
+            <div>
+                <label>Travel: $</label>
+                <input type="number" name="buckets.travel" required/>
+            </div>
+            
+            <div>
+                <label>Transfer: $</label>
+                <input type="number" name="buckets.transfer" required/>
+            </div>
+            
+            <div>
+                <label>Tax: $</label>
+                <input type="number" name="buckets.tax" required/>
+            </div>
+            
+            <div>
+                <label>Shops: $</label>
+                <input type="number" name="buckets.shops" required/>
+            </div>
+            
+            <div>
+                <label>Service: $</label>
+                <input type="number" name="buckets.service" required/>
+            </div>
+            
+            <div>
+                <label>Recreation: $</label>
+                <input type="number" name="buckets.recreation" required/>
+            </div>
+            
+            <div>
+                <label>Payment: $</label>
+                <input type="number" name="buckets.payment" required/>
+            </div>
+            
+            <div>
+                <label>Interest: $</label>
+                <input type="number" name="buckets.interest" required/>
+            </div>
+            
+            <div>
+                <label>Healthcare: $</label>
+                <input type="number" name="buckets.healthcare"  required/>
+            </div>
+            
+            <div>
+                <label>Food and Drink: $</label>
+                <input type="number" name="buckets.foodAndDrink"  required/>
+            </div>
+            
+            <div>
+                <label>Community: $</label>
+                <input type="number" name="buckets.community"  required/>
+            </div>
+            
+            <div>
+                <label>Cash Advance: $</label>
+                <input type="number" name="buckets.cashAdvance"  required/>
+            </div>
+            
+            <div>
+                <label>Bank Fees: $</label>
+                <input type="number" name="buckets.bankFees" required/>
+            </div>
+            
+            <input name="senderId" type="hidden" id="fbid">
+            
+            <input type="submit"/>
+            
+            
+        </form>
+        
+        <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+        <script type="text/javascript" src="app.js"></script>
+    </body>
+</html>
